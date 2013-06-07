@@ -8,32 +8,43 @@
 ## Set and List Example
 
 
-    public static void main( String[] args )
-    {
-    	System.out.println("List example .....");
-    	List<String> list = new ArrayList<String>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        list.add("1");
+    public static void main(String[] args)
+        {
+            LOGGER.debug("Starting!!!!");
 
-        for (String temp : list){
-        	System.out.println(temp);
-        }
 
-        System.out.println("Set example .....");
-        Set<String> set = new HashSet<String>();
-        set.add("1");
-        set.add("2");
-        set.add("3");
-        set.add("4");
-        set.add("1");
-        set.add("2");
-        set.add("5");
+                System.out.println("\nList example .....");
+                List<String> list = new ArrayList<String>();
+                list.add("1");
+                list.add("2");
+                list.add("3");
+                list.add("4");
+                list.add("1");
+                list.add("2");
+                list.add("5");
 
-        for (String temp : set){
-        	System.out.println(temp);
+                for (String temp : list){
+                    System.out.println(temp);
+                }
+                System.out.println("\n");
+
+                System.out.println("Set example .....");
+                Set<String> set = new HashSet<String>();
+                set.add("1");
+                set.add("2");
+                set.add("3");
+                set.add("4");
+                set.add("1");
+                set.add("2");
+                set.add("5");
+
+                for (String temp : set){
+                    System.out.println(temp);
+                }
+               System.out.println("\n");
+
+
+            LOGGER.debug("This is the end!!!!");
         }
     }
 
@@ -46,10 +57,14 @@
     3
     4
     1
+    2
+    5
+
+
     Set example .....
     3
     2
-    10
+    1
     5
     4
 
